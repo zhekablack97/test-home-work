@@ -7,18 +7,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-// @font-face {
-//   font-family: "WorkSans";
-//   src: local("WorkSans"),
-//     url("./fonts/WorkSans-SemiBold.ttf") format("truetype");
-//   font-weight: 600;
-// }
+@font-face {
+  font-family: "WorkSans";
+  src: local("WorkSans"),
+    url("./fonts/WorkSans/WorkSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
 
-// @font-face {
-//   font-family: "WorkSans";
-//   src: local("WorkSans"), url("./fonts/WorkSans-Regular.ttf") format("truetype");
-//   font-weight: 400;
-// }
+@font-face {
+  font-family: "WorkSans";
+  src: local("WorkSans"),
+    url("./fonts/WorkSans/WorkSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
