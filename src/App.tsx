@@ -1,19 +1,10 @@
 import "./App.scss";
+import { Header } from "./components/Header";
 
 function App() {
   return (
-    <main>
-      <header>
-        <h1 className="">Donations</h1>
-        <div>
-          <input type="text" placeholder="search" />
-          <select>
-            <option value="All">All statuses</option>
-            <option value="waiting">waiting statuses</option>
-            <option value="Succeeded">Succeeded statuses</option>
-          </select>
-        </div>
-      </header>
+    <>
+      <Header />
       <div>
         <div>
           <div>
@@ -91,6 +82,22 @@ function App() {
                         Allow donor to change default currency
                       </label>
                     </div>
+                    <div>
+                      <input type="checkbox" name="default_amount" />
+                      <label htmlFor="">
+                        Allow donor to change default currency
+                      </label>
+                    </div>
+                    <div>
+                      <span>Border size</span>
+                      <input type="range" />
+                      <label htmlFor="">2px</label>
+                    </div>
+                    <div>
+                      <span>Border radius</span>
+                      <input type="range" />
+                      <label htmlFor="">15px</label>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -110,7 +117,7 @@ function App() {
           </ul>
         </aside>
       </div>
-    </main>
+    </>
   );
 }
 

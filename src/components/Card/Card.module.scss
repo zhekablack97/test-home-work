@@ -1,0 +1,27 @@
+@import "../../styles/constants.scss";
+
+.content {
+  background-color: $white;
+
+  &-with_footer {
+    border-radius: 0.5rem 0.5rem 0 0;
+    border-top: 1px;
+    border-right: 1px;
+    border-left: 1px;
+    border-bottom: 0;
+    border-color: $gray-40;
+    border-style: solid;
+  }
+
+  &-without_footer {
+    border-radius: 0.5rem 0.5rem 0 0;
+    border: 1px solid $gray-40;
+  }
+}
+
+.footer {
+  border-radius: 0 0 0.5rem 0.5rem;
+  background-color: $gray-10;
+  padding: 1rem 2rem;
+  border: 1px solid $gray-40;
+}

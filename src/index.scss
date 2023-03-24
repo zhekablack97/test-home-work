@@ -1,5 +1,15 @@
-@import "./style/fonts.scss";
-@import "./style/normalize.scss";
+@import "./styles/fonts.scss";
+@import "./styles/normalize.scss";
+@import "./styles/constants.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  background-color: $gray;
+  font-size: $baseSize;
+}
 
 body {
   margin: 0;
