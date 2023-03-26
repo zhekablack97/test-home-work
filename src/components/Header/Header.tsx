@@ -1,5 +1,6 @@
 import { Card } from "../Card";
 import { Container } from "../Container";
+import { Input } from "../Input";
 import { Title } from "../Title";
 import styles from "./Header.module.scss";
 
@@ -10,6 +11,7 @@ export const Header: React.FC = () => {
         className={styles.wrapperContent}
         footer={
           <div>
+            <Input value="kdsl" />
             <input type="text" placeholder="search" />
             <select>
               <option value="All">All statuses</option>
