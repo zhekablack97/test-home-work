@@ -11,3 +11,10 @@
     url("../fonts/WorkSans//WorkSans-Regular.ttf") format("truetype");
   font-weight: 400;
 }
+
+@font-face {
+  font-family: "SourceCodePro";
+  src: local("SourceCodePro"),
+    url("../fonts/SourceCodePro/SourceCodePro-Regular.ttf") format("truetype");
+  font-weight: 400;
+}

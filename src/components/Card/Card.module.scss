@@ -1,5 +1,10 @@
 @import "../../styles/constants.scss";
 
+.wrapper {
+  box-shadow: 1px 3px 3px rgba(62, 63, 64, 0.1);
+  border-radius: 0.5rem;
+}
+
 .content {
   background-color: $white;
 

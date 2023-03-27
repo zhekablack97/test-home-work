@@ -1,0 +1,14 @@
+@import "./styles/constants.scss";
+
+.main {
+  padding: 53px 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 1.5rem;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 264px;
+  grid-column-gap: 1.5rem;
+}

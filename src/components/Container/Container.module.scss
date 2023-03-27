@@ -1,8 +1,9 @@
 @import "../../styles/constants.scss";
 
 .container {
-  max-width: 1272px;
+  max-width: 1256px;
   padding-left: $baseSize;
   padding-right: $baseSize;
   margin: 0 auto;
+  width: 100%;
 }

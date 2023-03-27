@@ -1,0 +1,35 @@
+@import "../../styles/constants.scss";
+
+.wrapper {
+  position: relative;
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    right: 0;
+    background-image: url("../../images/icons/downArrow.svg");
+  }
+}
+
+.select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  line-height: 1.5rem;
+  letter-spacing: 0.045em;
+  height: 100%;
+  position: relative;
+  height: 2.5rem;
+  z-index: 1;
+
+  &-onlyText {
+    border: none;
+    background-color: transparent;
+    width: fit-content;
+    padding: 0 1.5rem 0 0;
+  }
+}

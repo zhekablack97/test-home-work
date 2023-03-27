@@ -5,6 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "./fonts/WorkSans/WorkSans-Regular.ttf";
 import "./fonts/WorkSans/WorkSans-SemiBold.ttf";
+import "./fonts/SourceCodePro/SourceCodePro-Regular.ttf";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement

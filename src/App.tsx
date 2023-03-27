@@ -1,41 +1,15 @@
-import "./App.scss";
+import styles from "./App.module.scss";
+import { Container } from "./components/Container";
 import { Header } from "./components/Header";
+import { InfoDonation } from "./components/InfoDonation";
 
 function App() {
   return (
-    <>
+    <main className={styles.main}>
       <Header />
-      <div>
+      <Container className={styles.content}>
         <div>
-          <div>
-            <div>
-              <div>
-                <h2>Donation</h2>
-                <div>
-                  <span>$20.60 USD</span>
-                  <span>≈ €17.92 EUR</span>
-                </div>
-              </div>
-              <div>
-                <span>ID</span>
-                <span>TYNY694Y</span>
-              </div>
-            </div>
-            <div>
-              <div>
-                <span>Status</span>
-                <span>Succeeded</span>
-              </div>
-              <div>
-                <span>Supporter</span>
-                <span>Charlotte Ann</span>
-              </div>
-              <div>
-                <span>Campaign</span>
-                <span>Heart walk</span>
-              </div>
-            </div>
-          </div>
+          <InfoDonation />
 
           <div className="tab">
             <form action="">
@@ -116,8 +90,8 @@ function App() {
             <li>Cancel recurring</li>
           </ul>
         </aside>
-      </div>
-    </>
+      </Container>
+    </main>
   );
 }
 

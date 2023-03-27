@@ -24,7 +24,7 @@ export const Card: React.FC<ICard> = ({
     : styles["content-without_footer"];
 
   return (
-    <ContainerNode {...restProps}>
+    <ContainerNode className={styles.wrapper} {...restProps}>
       <div className={cx(contentStyle, styles.content, className)}>
         {children}
       </div>

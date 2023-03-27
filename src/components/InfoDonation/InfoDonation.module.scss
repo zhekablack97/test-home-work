@@ -1,0 +1,126 @@
+@import "../../styles/constants.scss";
+
+.wrapper {
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+
+  &-button {
+    display: flex;
+    flex-direction: column;
+    font-family: SourceCodePro, monospace;
+    gap: 0.25rem;
+  }
+}
+.green {
+  color: $green;
+}
+
+.title {
+  position: relative;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  top: -1px;
+  letter-spacing: 0.045em;
+  margin-bottom: 0.25rem;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 18px;
+    height: 18px;
+    background-image: url("../../images/icons/dollar.svg");
+    margin-right: 0.5rem;
+  }
+}
+
+.sum {
+  &-usd {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-right: 9px;
+    letter-spacing: 0.03em;
+  }
+
+  &-eur {
+    color: $gray-80;
+    line-height: 1.5rem;
+    letter-spacing: 0em;
+  }
+}
+
+.copy {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  line-height: 1.5rem;
+  padding: 0;
+  &::after {
+    content: "";
+    margin-left: 0.5rem;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url("../../images/icons/copy.svg");
+  }
+}
+
+.list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+    color: $gray-80;
+
+    &:not(:last-child) {
+      border-right: 1px solid $gray-50;
+    }
+
+    &:not(:first-child, :last-child) {
+      padding: 0 2rem;
+    }
+
+    &:first-child {
+      padding: 0 2rem 0 0;
+    }
+
+    &:last-child {
+      padding: 0 0 0 2rem;
+    }
+
+    span,
+    a {
+      &:first-child {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+      }
+      &:last-child {
+        display: flex;
+        align-items: center;
+        line-height: 1.5rem;
+      }
+    }
+  }
+}
+
+.check {
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 0.5rem;
+    background-image: url("../../images/icons/check.svg");
+  }
+}
