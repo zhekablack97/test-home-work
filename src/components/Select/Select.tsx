@@ -1,9 +1,12 @@
-import { HTMLAttributes, OptionHTMLAttributes, ReactNode } from "react";
+import { HTMLAttributes, OptionHTMLAttributes } from "react";
 import cx from "classnames";
 import styles from "./Select.module.scss";
 
 interface ISelect extends HTMLAttributes<HTMLSelectElement> {
-  options?: OptionHTMLAttributes<HTMLOptionElement>[];
+  options?: React.DetailedHTMLProps<
+    OptionHTMLAttributes<HTMLOptionElement>,
+    HTMLOptionElement
+  >[];
   selectStyles?: "border" | "onlyText";
 }
 
@@ -14,7 +17,7 @@ export const Select: React.FC<ISelect> = ({
   ...restProps
 }) => {
   return (
-    <div className={styles.wrapper}>
+    <div className={cx(styles.wrapper, styles[`wrapper-${selectStyles}`])}>
       <select
         className={cx(
           className,

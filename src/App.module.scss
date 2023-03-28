@@ -11,4 +11,9 @@
   display: grid;
   grid-template-columns: 1fr 264px;
   grid-column-gap: 1.5rem;
+
+  &-setting {
+    display: grid;
+    grid-row-gap: 1.5rem;
+  }
 }

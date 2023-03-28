@@ -7,16 +7,21 @@ interface IInput extends InputHTMLAttributes<HTMLInputElement> {
 }
 
 export const Input: React.FC<IInput> = ({
-  value,
   className,
   prefixStyle = "normal",
   ...restProps
 }) => {
   return (
-    <div className={cx(styles[`wrapper-${prefixStyle}`], styles.wrapper)}>
+    <div
+      className={cx(
+        styles[`wrapper-${prefixStyle}`],
+        styles.wrapper,
+        className
+      )}
+    >
       <input
         type="text"
-        className={cx(className, styles.input, styles[`input-${prefixStyle}`])}
+        className={cx(styles.input, styles[`input-${prefixStyle}`])}
         {...restProps}
       />
     </div>

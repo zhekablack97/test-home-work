@@ -1,0 +1,48 @@
+@import "../../styles/constants.scss";
+
+.wrapper {
+  display: inline-block;
+  height: 1.5rem;
+  position: relative;
+}
+
+.input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+
+  & + span {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 2px solid $gray-40;
+    z-index: 0;
+  }
+
+  &:checked {
+    & + span {
+      border-color: $green;
+
+      &::after {
+        content: "";
+        width: 0.75rem;
+        height: 0.75rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: block;
+        border-radius: 50%;
+        background-color: $green;
+      }
+    }
+  }
+}

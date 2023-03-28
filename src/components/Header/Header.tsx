@@ -16,9 +16,9 @@ export const Header: React.FC = () => {
             <Select
               selectStyles="onlyText"
               options={[
-                { value: "All", children: "All statuses" },
-                { value: "Waiting", children: "Waiting statuses" },
-                { value: "Succeeded", children: "Succeeded statuses" },
+                { value: "All", children: "All statuses", key: 1 },
+                { value: "Waiting", children: "Waiting statuses", key: 2 },
+                { value: "Succeeded", children: "Succeeded statuses", key: 3 },
               ]}
             />
           </div>

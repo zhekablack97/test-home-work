@@ -4,6 +4,7 @@
   padding: 1.5rem 2rem;
   display: flex;
   justify-content: space-between;
+  width: 100%;
 
   &-button {
     display: flex;
@@ -69,6 +70,10 @@
     height: 18px;
     background-image: url("../../images/icons/copy.svg");
   }
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .list {
@@ -76,11 +81,10 @@
   margin: 0;
   padding: 0;
   list-style: none;
-
+  letter-spacing: 0.045em;
   li {
     display: flex;
     flex-direction: column;
-    gap: 0.125rem;
     color: $gray-80;
 
     &:not(:last-child) {
@@ -92,7 +96,7 @@
     }
 
     &:first-child {
-      padding: 0 2rem 0 0;
+      padding: 0 0.8125rem 0 0;
     }
 
     &:last-child {
@@ -110,6 +114,10 @@
         align-items: center;
         line-height: 1.5rem;
       }
+    }
+
+    a {
+      color: $links;
     }
   }
 }

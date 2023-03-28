@@ -1,0 +1,1 @@
+export { SettingsDonation } from "./SettingsDonation";
