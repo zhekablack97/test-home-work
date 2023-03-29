@@ -6,6 +6,7 @@
   border: 1px solid $gray-40;
   border-radius: 0.5rem;
   width: 100%;
+  transition: 0.2s;
 
   &-normal {
     padding-left: 0.75rem;
@@ -13,6 +14,16 @@
 
   &-search {
     padding-left: 2.625rem;
+  }
+
+  &:hover {
+    border: 1px solid $gray-70;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: none;
+    border: 1px solid $green;
   }
 }
 

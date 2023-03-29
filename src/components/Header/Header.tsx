@@ -12,7 +12,7 @@ export const Header: React.FC = () => {
         className={styles[`wrapper-content`]}
         footer={
           <div className={styles[`wrapper-footer`]}>
-            <Input value="kdsl" placeholder="Search" prefixStyle="search" />
+            <Input placeholder="Search" prefixStyle="search" />
             <Select
               selectStyles="onlyText"
               options={[

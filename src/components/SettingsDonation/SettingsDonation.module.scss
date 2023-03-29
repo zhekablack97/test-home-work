@@ -4,7 +4,7 @@
   padding: 1.875rem 1.5rem 0;
   position: relative;
   .scroll {
-    max-width: 936px;
+    max-width: 888px;
     max-height: 3rem;
     overflow: hidden;
 
@@ -78,7 +78,7 @@
 
     > *:nth-child(2n-1) {
       display: flex;
-      justify-content: end;
+      justify-content: flex-end;
     }
 
     > label {

@@ -62,6 +62,9 @@
   align-items: center;
   line-height: 1.5rem;
   padding: 0;
+  border-radius: 0.5rem;
+  outline: 1px solid transparent;
+  transition: 0.2s;
   &::after {
     content: "";
     margin-left: 0.5rem;
@@ -73,6 +76,12 @@
 
   &:hover {
     cursor: pointer;
+    background-color: $gray-40;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: 1px solid $gray-50;
   }
 }
 
@@ -117,7 +126,18 @@
     }
 
     a {
+      transition: 0.2s;
       color: $links;
+      outline: 1px solid transparent;
+      border-radius: 0.5rem;
+      &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+      }
+
+      &:focus {
+        outline: 1px solid $gray-40;
+      }
     }
   }
 }

@@ -7,6 +7,7 @@ interface ICard extends HTMLAttributes<HTMLDivElement> {
   footer?: ReactNode;
   asNode?: TypeContainerBlockElements;
   classNameFooter?: string;
+  classNameWrapper?: string;
 }
 
 export const Card: React.FC<ICard> = ({
@@ -15,6 +16,7 @@ export const Card: React.FC<ICard> = ({
   className,
   classNameFooter,
   footer,
+  classNameWrapper,
   ...restProps
 }) => {
   const ContainerNode = asNode;
@@ -24,7 +26,10 @@ export const Card: React.FC<ICard> = ({
     : styles["content-without_footer"];
 
   return (
-    <ContainerNode className={styles.wrapper} {...restProps}>
+    <ContainerNode
+      className={cx(styles.wrapper, classNameWrapper)}
+      {...restProps}
+    >
       <div className={cx(contentStyle, styles.content, className)}>
         {children}
       </div>

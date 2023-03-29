@@ -1,4 +1,5 @@
 import styles from "./App.module.scss";
+import { Aside } from "./components/Aside";
 import { Container } from "./components/Container";
 import { Header } from "./components/Header";
 import { InfoDonation } from "./components/InfoDonation";
@@ -13,14 +14,7 @@ function App() {
           <InfoDonation />
           <SettingsDonation />
         </div>
-        <aside>
-          <ul>
-            <li>Change amount</li>
-            <li>Change payment method</li>
-            <li>Change date</li>
-            <li>Cancel recurring</li>
-          </ul>
-        </aside>
+        <Aside />
       </Container>
     </main>
   );
