@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/test-home-work/static/css/main.f6596ae8.css",
-    "main.js": "/test-home-work/static/js/main.6774439f.js",
+    "main.css": "/test-home-work/static/css/main.5d4a1f5f.css",
+    "main.js": "/test-home-work/static/js/main.62b8fc09.js",
     "static/js/787.a7d6f332.chunk.js": "/test-home-work/static/js/787.a7d6f332.chunk.js",
     "static/media/WorkSans-SemiBold.ttf": "/test-home-work/static/media/WorkSans-SemiBold.8988ce2e3e8957a63db8.ttf",
     "static/media/WorkSans-Regular.ttf": "/test-home-work/static/media/WorkSans-Regular.ca211a55c3d9d8690c63.ttf",
@@ -17,12 +17,12 @@
     "static/media/check.svg": "/test-home-work/static/media/check.d7774c36e4454f8b779f.svg",
     "static/media/arrow.svg": "/test-home-work/static/media/arrow.b5eeaa22b8c8f86bfef6.svg",
     "static/media/downArrow.svg": "/test-home-work/static/media/downArrow.01fab814d0234205d587.svg",
-    "main.f6596ae8.css.map": "/test-home-work/static/css/main.f6596ae8.css.map",
-    "main.6774439f.js.map": "/test-home-work/static/js/main.6774439f.js.map",
+    "main.5d4a1f5f.css.map": "/test-home-work/static/css/main.5d4a1f5f.css.map",
+    "main.62b8fc09.js.map": "/test-home-work/static/js/main.62b8fc09.js.map",
     "787.a7d6f332.chunk.js.map": "/test-home-work/static/js/787.a7d6f332.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f6596ae8.css",
-    "static/js/main.6774439f.js"
+    "static/css/main.5d4a1f5f.css",
+    "static/js/main.62b8fc09.js"
   ]
 }
