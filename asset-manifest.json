@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/test-home-work/static/css/main.440f8b1a.css",
+    "main.js": "/test-home-work/static/js/main.ab47c22d.js",
+    "static/js/787.a7d6f332.chunk.js": "/test-home-work/static/js/787.a7d6f332.chunk.js",
+    "static/media/WorkSans-SemiBold.ttf": "/test-home-work/static/media/WorkSans-SemiBold.8988ce2e3e8957a63db8.ttf",
+    "static/media/WorkSans-Regular.ttf": "/test-home-work/static/media/WorkSans-Regular.ca211a55c3d9d8690c63.ttf",
+    "static/media/SourceCodePro-Regular.ttf": "/test-home-work/static/media/SourceCodePro-Regular.2cacf64afc86b76c81e6.ttf",
+    "static/media/wallet.svg": "/test-home-work/static/media/wallet.3314ee01337cf28518c7.svg",
+    "index.html": "/test-home-work/index.html",
+    "static/media/change.svg": "/test-home-work/static/media/change.cb36bd4319e703ed440b.svg",
+    "static/media/copy.svg": "/test-home-work/static/media/copy.f2e19267c878f49e1e50.svg",
+    "static/media/dollar.svg": "/test-home-work/static/media/dollar.ea9a96cf85cacf2afab3.svg",
+    "static/media/calendar.svg": "/test-home-work/static/media/calendar.6f7104952e7008720e54.svg",
+    "static/media/cancel.svg": "/test-home-work/static/media/cancel.c2154cff565a5b159664.svg",
+    "static/media/search.svg": "/test-home-work/static/media/search.7d4908860439e408a055.svg",
+    "static/media/check.svg": "/test-home-work/static/media/check.d7774c36e4454f8b779f.svg",
+    "static/media/arrow.svg": "/test-home-work/static/media/arrow.b5eeaa22b8c8f86bfef6.svg",
+    "static/media/downArrow.svg": "/test-home-work/static/media/downArrow.01fab814d0234205d587.svg",
+    "main.440f8b1a.css.map": "/test-home-work/static/css/main.440f8b1a.css.map",
+    "main.ab47c22d.js.map": "/test-home-work/static/js/main.ab47c22d.js.map",
+    "787.a7d6f332.chunk.js.map": "/test-home-work/static/js/787.a7d6f332.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.440f8b1a.css",
+    "static/js/main.ab47c22d.js"
+  ]
+}
