@@ -1,17 +1,20 @@
-import classNames from "classnames";
 import cx from "classnames";
-import { InputHTMLAttributes, useState } from "react";
+import { InputHTMLAttributes } from "react";
 import styles from "./Range.module.scss";
 
 interface IRange extends InputHTMLAttributes<HTMLInputElement> {}
 
-export const Range: React.FC<IRange> = ({ className, min = 0, max = 100 }) => {
-  const [value, setValue] = useState("0");
-
+export const Range: React.FC<IRange> = ({
+  value,
+  onChange,
+  className,
+  min = 0,
+  max = 100,
+}) => {
   return (
     <div className={cx(styles.wrapper, className)}>
       <input
-        onChange={(e) => setValue(e.target.value)}
+        onChange={onChange}
         value={value}
         className={cx(styles.input)}
         min={min}

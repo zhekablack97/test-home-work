@@ -17,13 +17,14 @@ export const SettingsDonation: React.FC = () => {
     "URL Control",
   ];
   const [activeTab, setActiveTab] = useState("Behavior");
-
+  const [borderSize, setBorderSize] = useState(2);
+  const [borderRadius, setBorderRadius] = useState(15);
   return (
     <Card
       classNameWrapper={styles.wrapper}
       classNameFooter={styles.footer}
       footer={
-        <div>
+        <div className={styles["wrapper-footer"]}>
           <button className={cx(styles["button-save"], styles.button)}>
             Save changes
           </button>
@@ -126,14 +127,26 @@ export const SettingsDonation: React.FC = () => {
 
           <span className={styles["border-сaption"]}>Border size</span>
           <div className={cx(styles["border-size"], styles.border)}>
-            <Range min={0} max={2} className={styles.range} />
-            <label htmlFor="">2px</label>
+            <Range
+              min={0}
+              max={4}
+              value={borderSize}
+              className={styles.range}
+              onChange={(e) => setBorderSize(Number(e.target.value))}
+            />
+            <label htmlFor="">{borderSize}px</label>
           </div>
 
           <span className={styles["border-сaption"]}>Border radius</span>
           <div className={cx(styles["border-radius"], styles.border)}>
-            <Range min={0} max={15} className={styles.range} />
-            <label htmlFor="">15px</label>
+            <Range
+              min={0}
+              max={30}
+              value={borderRadius}
+              onChange={(e) => setBorderRadius(Number(e.target.value))}
+              className={styles.range}
+            />
+            <label htmlFor="">{borderRadius}px</label>
           </div>
         </div>
       </form>
