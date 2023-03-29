@@ -4,6 +4,7 @@
 
 * {
   box-sizing: border-box;
+  color: $gray-100;
 }
 
 :root {
@@ -16,10 +17,16 @@ body {
   font-family: "Work Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: $gray-100;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+button,
+select,
+input,
+button {
+  color: $gray-100;
 }
