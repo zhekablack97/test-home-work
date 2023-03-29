@@ -79,7 +79,6 @@
     background-color: $gray-40;
   }
 
-  &:focus,
   &:focus-visible {
     outline: 1px solid $gray-50;
   }
@@ -135,7 +134,7 @@
         opacity: 0.8;
       }
 
-      &:focus {
+      &:focus-visible {
         outline: 1px solid $gray-40;
       }
     }

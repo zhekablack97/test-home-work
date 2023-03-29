@@ -7,16 +7,23 @@ export const Aside: React.FC = () => {
       <nav>
         <ul>
           <li>
-            <a href="#"> Change amount</a>
+            <a href="#" className={styles.amount}>
+              {" "}
+              Change amount
+            </a>
           </li>
           <li>
-            <a href="#">Change payment method</a>
+            <a href="#" className={styles.payment}>
+              Change payment method
+            </a>
           </li>
           <li>
-            <a href="#">Change date</a>
+            <a href="#" className={styles.date}>
+              Change date
+            </a>
           </li>
           <li>
-            <button>Cancel recurring</button>
+            <button className={styles.cancel}>Cancel recurring</button>
           </li>
         </ul>
       </nav>

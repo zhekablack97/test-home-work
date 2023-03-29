@@ -1,4 +1,5 @@
 import cx from "classnames";
+import { useState } from "react";
 import { Card } from "../Card";
 import { CheckBox } from "../CheckBox";
 import { Input } from "../Input";
@@ -8,6 +9,15 @@ import { Select } from "../Select";
 import styles from "./SettingsDonation.module.scss";
 
 export const SettingsDonation: React.FC = () => {
+  const tabs = [
+    "Behavior",
+    "Appearance",
+    "Custom Fields",
+    "Questions",
+    "URL Control",
+  ];
+  const [activeTab, setActiveTab] = useState("Behavior");
+
   return (
     <Card
       className="tab"
@@ -27,13 +37,15 @@ export const SettingsDonation: React.FC = () => {
         <div className={styles.tab}>
           <div className={styles.scroll}>
             <div className={styles["scroll-block"]}>
-              <button type="button" className={cx(styles.active)}>
-                Behavior
-              </button>
-              <button type="button">Appearance</button>
-              <button type="button">Custom Fields</button>
-              <button type="button">Questions</button>
-              <button type="button">URL Control</button>
+              {tabs.map((item) => (
+                <button
+                  type="button"
+                  className={activeTab === item ? styles.active : ""}
+                  onClick={() => setActiveTab(item)}
+                >
+                  {item}
+                </button>
+              ))}
             </div>
           </div>
         </div>
