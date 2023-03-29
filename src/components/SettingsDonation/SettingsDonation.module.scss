@@ -248,3 +248,22 @@
     overflow: hidden;
   }
 }
+
+@media screen and (max-width: $sm) {
+  .content {
+    &-form {
+      grid-template-columns: 1fr;
+
+      > *:nth-child(2n-1) {
+        display: flex;
+        justify-content: flex-start;
+      }
+
+      > label,
+      > span {
+        line-height: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}
