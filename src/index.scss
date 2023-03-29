@@ -30,3 +30,9 @@ input,
 button {
   color: $gray-100;
 }
+
+label {
+  &:active {
+    background-color: inherit;
+  }
+}
