@@ -1,11 +1,16 @@
 @import "../../styles/constants.scss";
 
+.wrapper {
+  max-width: 100%;
+  overflow: hidden;
+}
+
 .tab {
   padding: 1.875rem 1.5rem 0;
   position: relative;
   .scroll {
     max-width: 888px;
-    max-height: 3rem;
+    max-height: 2.98rem;
     overflow: hidden;
 
     &-block {
@@ -118,7 +123,12 @@
 
 .designation {
   margin-bottom: 1.5rem;
-  width: 296px;
+  max-width: 296px;
+  width: 100%;
+
+  &-select {
+    width: 100%;
+  }
 }
 
 .goal {
@@ -170,7 +180,8 @@
 }
 
 .range {
-  width: 218px;
+  max-width: 218px;
+  width: 100%;
   margin-right: 1rem;
 }
 
@@ -213,4 +224,19 @@
 .footer {
   padding: 1.5rem 2rem;
   background-color: #fffbec;
+}
+
+@media screen and (max-width: $md) {
+  .content {
+    &-form {
+      padding: 2.5rem 1.5rem;
+    }
+  }
+
+  .goal {
+    &-input {
+      width: 100%;
+      max-width: 192px;
+    }
+  }
 }

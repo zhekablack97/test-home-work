@@ -20,7 +20,7 @@ export const SettingsDonation: React.FC = () => {
 
   return (
     <Card
-      className="tab"
+      classNameWrapper={styles.wrapper}
       classNameFooter={styles.footer}
       footer={
         <div>
@@ -52,8 +52,9 @@ export const SettingsDonation: React.FC = () => {
         <div className={styles["content-form"]}>
           <label htmlFor="checkout_setting">Designation</label>
           <Select
+            classNameWrapper={styles["designation"]}
             id="checkout_setting"
-            className={styles["designation"]}
+            className={styles["designation-select"]}
             selectStyles="border"
             options={[
               {

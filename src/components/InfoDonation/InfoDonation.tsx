@@ -30,7 +30,7 @@ export const InfoDonation: React.FC<IInfoDonation> = () => {
         </ul>
       }
     >
-      <>
+      <div className={styles["wrapper-content"]}>
         <div>
           <Title asNode="h2" className={cx(styles.title)}>
             Donation
@@ -48,7 +48,7 @@ export const InfoDonation: React.FC<IInfoDonation> = () => {
             <span>TYNY694Y</span>
           </button>
         </div>
-      </>
+      </div>
     </Card>
   );
 };

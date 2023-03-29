@@ -8,16 +8,24 @@ interface ISelect extends HTMLAttributes<HTMLSelectElement> {
     HTMLOptionElement
   >[];
   selectStyles?: "border" | "onlyText";
+  classNameWrapper?: string;
 }
 
 export const Select: React.FC<ISelect> = ({
   className,
   options = [],
   selectStyles = "border",
+  classNameWrapper,
   ...restProps
 }) => {
   return (
-    <div className={cx(styles.wrapper, styles[`wrapper-${selectStyles}`])}>
+    <div
+      className={cx(
+        styles.wrapper,
+        classNameWrapper,
+        styles[`wrapper-${selectStyles}`]
+      )}
+    >
       <select
         className={cx(
           className,
