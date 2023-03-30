@@ -6,6 +6,7 @@ import { Input } from "../Input";
 import { Radio } from "../Radio";
 import { Range } from "../Range";
 import { Select } from "../Select";
+import ScrollContainer from "react-indiana-drag-scroll";
 import styles from "./SettingsDonation.module.scss";
 
 export const SettingsDonation: React.FC = () => {
@@ -37,7 +38,7 @@ export const SettingsDonation: React.FC = () => {
       <form action="">
         <div className={styles.tab}>
           <div className={styles.scroll}>
-            <div className={styles["scroll-block"]}>
+            <ScrollContainer className={styles["scroll-block"]}>
               {tabs.map((item) => (
                 <button
                   type="button"
@@ -47,7 +48,7 @@ export const SettingsDonation: React.FC = () => {
                   {item}
                 </button>
               ))}
-            </div>
+            </ScrollContainer>
           </div>
         </div>
         <div className={styles["content-form"]}>
